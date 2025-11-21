@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Front-End</title>
+
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+  
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid #f528d0;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            transition: 0.3s ease-in-out;
+        }
+        .skills i {
+            font-size: 2.5rem;
+            color: #f528d0;
+        } 
+        footer a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Mi Portafolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse fw-bold navbar-white" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre mí</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+  
+    <header class="text-center bg-secondary text-white py-5 mt-5">
+        <img src="https://media.licdn.com/dms/image/v2/D4E03AQEEWCe9fNEx3Q/profile-displayphoto-scale_200_200/B4EZqaGAmlGUAY-/0/1763521859627?e=1765411200&v=beta&t=4jOSy2aP9WQbzPiLQ0cfrmFylCkbgcfuDc7fOirxgwI" class="profile-img mb-3" alt="perfil">
+        <h1 class="fw-bold">Paz Lorena Bascuñán</h1>
+        <p class="lead">Estudiante de Desarrollo Front-End</p>
+        <p>Con conocimientos en <strong>HTML, CSS, JavaScript y Vue.js</strong></p>
+    </header>
+
+    <section id="sobre" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Sobre mí</h2>
+        <p class="text-center mx-auto w-75" data-aos="fade-up">
+            Soy una estudiante apasionada por el desarrollo front-end. Me gusta crear interfaces modernas, rápidas y responsivas utilizando HTML, CSS, JavaScript y Vue.js.
+            Mi objetivo es crecer como desarrolladora y construir experiencias web atractivas.
+        </p>
+    </section>
+
+    <section id="habilidades" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="mb-4" data-aos="fade-up">Habilidades</h2>
+            <div class="row skills g-4">
+                <div class="col-md-3" data-aos="zoom-in"><i class="bi bi-code-slash"></i><p>HTML</p></div>
+                <div class="col-md-3" data-aos="zoom-in"><i class="bi bi-palette"></i><p>CSS</p></div>
+                <div class="col-md-3" data-aos="zoom-in"><i class="bi bi-braces"></i><p>JavaScript</p></div>
+                <div class="col-md-3" data-aos="zoom-in"><i class="bi bi-diagram-3"></i><p>Vue.js</p></div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="proyectos" class="container py-5">
+        <h2 class="text-center mb-4" data-aos="fade-up">Mis Proyectos</h2>
+
+        <div class="row g-4">
+          
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card shadow-sm">
+                    <img src="/pulgastore.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Pulga Store</h5>
+                        <p class="card-text">Proyecto de tienda de vinilos on-line</p>
+                        <a href="https://pulgastore.netlify.app/" target="_blank" rel="noopener noreferrer"  class="btn btn-info w-100"><i class="bi bi-box-arrow-up-right"></i> Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card shadow-sm">
+                    <img src="/bicifix.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">BiciFix</h5>
+                        <p class="card-text">Proyecto de tienda de arreglo de bicicletas</p>
+                        <a href="https://bicifix.netlify.app/" target="_blank" rel="noopener noreferrer"  class="btn btn-info w-100"><i class="bi bi-box-arrow-up-right"></i> Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card shadow-sm">
+                    <img src="/techdesign.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">TechDesign</h5>
+                        <p class="card-text">Pryecto de gestión tecnológica.</p>
+                        <a href="https://techdesignchile.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-info w-100"><i class="bi bi-box-arrow-up-right"></i> Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4" data-aos="fade-up">
+                <div class="card shadow-sm">
+                    <img src="/telovendo.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Te Lo Vendo</h5>
+                        <p class="card-text">Proyecto de tienda online</p>
+                        <a href="https://telovendoboleta.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-info w-100"><i class="bi bi-box-arrow-up-right"></i> Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="card shadow-sm">
+                    <img src="/tecnochile.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">TecnoChile</h5>
+                        <p class="card-text">Proyecto de tienda tecnológica.</p>
+                        <a href="https://tecnochile.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-info w-100"><i class="bi bi-box-arrow-up-right"></i> Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="card shadow-sm">
+                    <img src="/adweb.jpg" class="card-img-top" alt="">
+                    <div class="card-body">
+                        <h5 class="card-title">Adweb Online</h5>
+                        <p class="card-text">Proyecto de academia online</p>
+                        <a href="https://adweb20.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-info w-100"><i class="bi bi-box-arrow-up-right"></i> Ver proyecto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+ 
+   
+<section id="contacto" class="bg-light py-5">
+    <div class="container">
+
+        <h2 class="text-center mb-4" data-aos="fade-up">Contacto</h2>
+
+        <div class="row justify-content-center">
+
+           
+            <div class="col-md-6 mb-4" data-aos="fade-right">
+                <form action="https://formsubmit.co/paz.bascunan.g@gmail.com" method="POST">
+
+                    <input type="hidden" name="_captcha" value="false">
+
+                    
+                    <input type="hidden" name="_next" value="https://tu-dominio.com/gracias.html">
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input type="text" name="nombre" class="form-control" required placeholder="Tu nombre">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Correo electrónico</label>
+                        <input type="email" name="correo" class="form-control" required placeholder="email@ejemplo.com">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Mensaje</label>
+                        <textarea name="mensaje" rows="4" class="form-control" required placeholder="Escribe tu mensaje..."></textarea>
+                    </div>
+
+                    <button class="btn btn-info w-100">
+                        <i class="bi bi-send"></i> Enviar mensaje
+                    </button>
+                </form>
+            </div>
+
+            
+            <div class="col-md-4 d-flex flex-column justify-content-center" data-aos="fade-left">
+                <h4 class="text-center mb-3">Sígueme en mis redes</h4>
+
+                <a href="https://github.com/pazbas" target="_blank" rel="noopener noreferrer"  class="btn btn-dark mb-3 w-100">
+                    <i class="bi bi-github"></i> GitHub
+                </a>
+
+                <a href="https://www.linkedin.com/in/paz-bascuñan" target="_blank" rel="noopener noreferrer"  class="btn btn-info w-100">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+    <footer class="bg-dark text-white text-center py-3">
+        © 2025 Paz Bascuñan Mi Portafolio — Todos los derechos reservados  
+        <br>
+        <a href="#">Volver arriba</a>
+    </footer>
+
+   
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+</html>
